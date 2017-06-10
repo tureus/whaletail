@@ -1,0 +1,18 @@
+[package]
+name = "whaletail"
+version = "0.1.0"
+authors = ["Xavier Lange <xrlange@tureus.com>"]
+
+[dependencies]
+# parsing data
+chrono = { version = "*", features = ["serde"] }
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+notify = "*"
+tokio-core = "*"
+futures = "*"
+futures-cpupool = "*"
+
+[profile.release]
+lto = true
